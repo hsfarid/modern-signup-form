@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "montserrat", sans-serif;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #f4f4f4;
+}
+
+/* container styles  */
+.container{
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+  
+}
+
+/* left section styles */
+
+/* logo styles  */
+.container .left .logo{
+    font-weight: bold;
+    font-size: 0.65rem;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.container .left .logo .code{
+    color: orange;
+}
+.container .left{
+    padding: 0 2rem 0 1.65rem;
+    background-color: rgba(13, 13, 212, 0.662);
+    border-radius: 14px;
+    box-shadow: 3px 0px 10px rgba(0,0,0,0.2);
+    color: #f7f7f7;
+}
+.container .left .text-content{
+    margin-bottom: 30px;
+    
+}
+.container .left .text-content h1{
+    font-size: 1.35rem;
+    margin-bottom: 10px;
+}
+.container .left .text-content p{
+    font-size: 0.65rem;
+}
+
+/* left section image  */
+.container .left .image-content img{
+    width: 100%;
+    display: block;
+}
+
+/* right section styles  */
+.container .right{
+    position: relative;
+    left: -20px;
+    padding: 2rem;
+    border-radius: 14px;
+    background-color: white;
+    box-shadow: 3px 0px 10px rgba(0,0,0,0.2);
+}
+.container .right .lang{
+    text-align: right;
+   
+}
+.container .right .lang select{
+    font-size: 0.56rem;
+    color: #333;
+    border: none;
+}
+.container .right h2{
+    font-size: 0.75rem;
+    margin-bottom: 10px;
+}
+.container .right .input-div{
+    margin-bottom: 10px;
+}
+.container .right .input-div input{
+    padding: 8px 0;
+    padding-right: 40px;
+    font-size: 0.65rem;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    outline: none;
+}
+.container .right .input-div input::placeholder{
+    color: #888;
+    opacity: 1;
+}
+.container .right .password{
+    position: relative;
+}
+.container .right .password .eye-icon{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #555;
+    font-size: 16px;
+}
+
+.container .right .input-div-checkbox{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.container .right .input-div-checkbox span{
+    font-size: 0.5rem;
+}
+.container .right .sign-up-btn{
+    width: 100%;
+    padding: 6px 20px;
+    font-size: 0.75rem;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(13, 13, 212, 0.836);
+    color: white;
+    border-radius: 16px;
+    font-weight: bold;
+}
+.sign-up-with{
+    font-size: 0.65rem;
+    color: #333;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+
+/* social icons styles  */
+.social-icons{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-icons span{
+    font-size: 12px;
+}
+.social-icons span i{
+    cursor: pointer;
+}
+
+.sign-in{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 0.65rem;
+}
+
+/* styles for smaller screens  */
+
+@media (max-width: 860px){
+.container{
+    width: 90vw;
+}
+}
+@media (max-width: 560px){
+    .container{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .left{
+        display: none;
+    }
+    .container .right{
+        left: 0;
+    }
+    .container .right .lang{
+        margin-bottom: 30px;
+       
+    }
+}
